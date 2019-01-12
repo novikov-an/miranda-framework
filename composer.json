@@ -11,7 +11,16 @@
       "Miranda\\": "src/Miranda/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Miranda\\Tests\\": "tests/Miranda/"
+    }
+  },
   "require-dev": {
     "phpunit/phpunit": "^7.5"
+  },
+  "scripts": {
+    "serve": "php -S 0.0.0.0:8080 -t public public/index.php",
+    "test": "phpunit --color=always"
   }
 }
